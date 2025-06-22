@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- make responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flow Planner</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <link rel="icon" href="/images/favicon.png">
+</head>
+<body class="custom-background has-navbar-fixed-top">
+    <!-- fix firefox bug onload-->
+    <!-- <script>0</script> -->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!-- LOGO -->
+            <a class="navbar-item is-arrowless">
+                <img src="/images/favicon.png" width="28" height="28">
+            </a>
+
+            <!-- SETTINGS BUTTON (only on touch devices) -->
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start navbar-center">
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Produkt
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Features
+                        </a>
+                        <a class="navbar-item">
+                            Dokumentation
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Support
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Über uns
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Kontakt
+                        </a>
+                    </div>
+                </div>
+
+                <a class="navbar-item">
+                    Preise
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light" href="login.html">
+                            Anmelden
+                        </a>
+                        <a class="button is-primary" href="join.html">
+                            Registrieren
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="hero is-fullheight-with-navbar header-image">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 is-spaced has-text-white">Project planning shouldn’t be rocket science — our app boosts your clarity, focus and ease of mind by eliminating micromanagement and making it a joy to achieve your goals.</h1>
+                <h2 class="subtitle has-text-white">A planning tool that closes the loop — from project setup to automated scheduling and time tracking — for teams or individuals aiming for the stars.</h2>
+                <div class="buttons is-centered"><a class="control button is-primary" href="#">Try it for free.</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+        <div class="container has-text-centered py-4">
+            <h2 class="title mb-6">Features</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Intuitive & visual</h3>
+                            <p class="block">Visually configure your projects and tasks, log progress playfully on the fly and instantly regenerate schedule estimates — repeat as needed and stay aligned with reality.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Automated efficiency</h3>
+                            <p class="block">A proven scheduling algorithm calculates the optimal task order and timing, helping you adapt effortlessly while staying focused on what truly matters.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Team focus</h3>
+                            <p class="block">Designed from ground up to handle multiple projects and resources, keeping everyone aligned comes naturally — minimizing confusion and visually revealing the best path forward.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANS AND PRICING -->
+    <section class="section">
+        <div class="container has-text-centered py-4">
+            <h2 class="title mb-6">Plans and pricing</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Small Piper</h3>
+                            <p class="block">Join our network, but build and manage everything yourself.</p>
+                            <h4 class="title is-spaced is-5">$10 <small>Per user / monthly</small></h4>
+                            <button class="button is-primary" type="button">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Medium Piper</h3>
+                            <p class="block">We build what you need, but you still need to manage your data.</p>
+                            <h4 class="title is-spaced is-5">$50 <small>Per user / monthly</small></h4>
+                            <button class="button is-primary is-outlined" type="button">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Enterprise Piper</h3>
+                            <p class="block">We do everything for you, including managing your data.</p>
+                            <h4 class="title is-spaced is-5">$100 <small>Per user / monthly</small></h4>
+                            <button class="button is-primary is-outlined" type="button">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
